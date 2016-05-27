@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  color: white;
+  font-family: "Alice", serif;
+  background-color: rgb(99, 36, 131);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+}
+
+.menu-fullscreen{
+  height: 100vh;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+}
+.menu-fullscreen li{
+
+}
+
+.menu-fullscreen li .text {
+  height:0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  transition: height .5s ease-in-out;
+  background-color: black;
+}
+
+.menu-fullscreen li.opened .text {
+  height: 85.7vh;
+}
+
+li a {
+  width: 100%;
+  display: inline-block;
+  font-size: 35pt;
+  height: 14.3vh;
+  line-height: 14.3vh;
+  text-align: center;
+  border-bottom: 0.5px solid white;
+  border-top: 0.5px solid white;
+}
